@@ -1,0 +1,1 @@
+A course about Innersource basics within an organization. 

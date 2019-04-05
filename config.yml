@@ -1,0 +1,65 @@
+title: Discover and reuse projects within your organization
+tagline: Discover and reuse projects within your organization
+description: Discover and reuse projects within your organization
+template:
+    name: innersource
+    repo: false
+steps:
+
+# 0: before: Open a welcome issue
+#     - response explains we're creating an internal innersource commons, as we work on this repo we'll be creating a resource others can use within your organization
+#     - response explains that this repo can continue to be used after the course is finished
+#     - response explains that we'll start every new issue/PR with a challenge that will hopefully explain why Innersource is important
+# 1: on issues.closed
+#     - Open PR for repo ownership
+#     - response contains challenge question: true/false there is a repository at https://github.com/githubtraining/training-manual
+#         - answer: true, it _does_ exist, but it is a repository private to the github organization, so it's not visible, this is because of org permissions. Private repositories in the org are only visible by members of that org
+# 2: on issue_comment.edited (learner voted)
+#     - bot validates guess, drops explanations
+#     - response explains ownership of repositories, name of repositories
+#     - response recommends few orgs as possible
+#     - response explains team mentions across orgs
+#     - bot asks learner to merge the PR
+# 3: on pr.closed (learner merged)
+#     - bot opens PR for creating discoverable repos
+#     - challenge question: what is this repository for? screenshot of a repo with no README, topics, etc
+#     - learner enters response, likely will fail
+# 4: on issue_comment.created (learner answered)
+#     - bot validates response
+#     - bot explains topics, name, description, url
+#     - asks learner to merge
+# 5: on pr.closed (learner merged)
+#     - bot creates PR about templates
+#     - challenge question: 4 different screenshots of bug reports -- which is the right one? 
+#     - learner answers (no right answer)
+# 6: on issue_comment.edited (learner voted)
+#     - bot responds why there's no right answer
+#     - bot talks about issue and PR templates examples
+#     - asks learner to merge
+# 7: on pr.closed (learner merged)
+#     - bot creates PR about workflow
+#     - challenge: what should you name your branch? screenshot of a list of branches
+#     - learner answers
+# 8: on issue_comment.created (learner answered)
+#     - bot validates
+#     - bot explains items in the PR, will be combinations of information about branch protections, example workflows, CODEOWNERS, deployment, etc
+#     - asks learner to merge 
+# 9: on pr.closed (learner merged)
+#     - bot creates PR about Project management
+#     - challenge: what should you work on? screenshot of issues
+#     - learner chooses one
+# 10: on issue_comment.edited (learner voted)
+#     - bot explains that since no project management is involved, any answer is fair game
+#     - bot explains docs in PR, lightweight project management on GitHub, explicitly calling out project management strategies
+#     - asks learner to merge
+# 11: on pr.closed (learner merge)
+#     - bot creates PR about measuring success
+#     - challenge question: what might be some ways to measure success? 
+#     - learner votes
+# 12: on issue_comment.edited (learner voted)
+#     - bot validates, most of the checked answers are probably right
+#     - bot references PR docs, talks about measuring strategies
+#     - asks learner to merge
+# 13: on pr.closed (learner merged)
+#     - bot opens final issue, explaining what to do with this repo, includes instructions about forking or cloning
+#     - bot congratulates learner on completion, recommends next steps
