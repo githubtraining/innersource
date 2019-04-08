@@ -1,3 +1,5 @@
 - Open PR for repo ownership
 - response contains challenge question: true/false there is a repository at https://github.com/githubtraining/training-manual
-- answer: true, it _does_ exist, but it is a repository private to the github organization, so it's not visible, this is because of org permissions. Private repositories in the org are only visible by members of that org
+
+- [ ] True, there is a repository at githubtraining/training-manual
+- [ ] False, no repository exists at githubtraining/training-manual

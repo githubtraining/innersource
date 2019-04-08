@@ -11,8 +11,8 @@ before:
 
 steps:
 - title: Close an issue
-  event: issues.closed
   description: Close an issue
+  event: issues.closed
   actions:
   - type: createPullRequest
     title: Repository ownership and names
@@ -24,24 +24,48 @@ steps:
     data: 
       url: '%actions.ownerPR.data.html_url%'
 
-# 2: on issue_comment.edited (learner voted)
-#     - bot validates guess, drops explanations
-#     - response explains ownership of repositories, name of repositories
-#     - response recommends few orgs as possible
-#     - response explains team mentions across orgs
-#     - bot asks learner to merge the PR
-# 3: on pr.closed (learner merged)
-#     - bot opens PR for creating discoverable repos
-#     - challenge question: what is this repository for? screenshot of a repo with no README, topics, etc
-#     - learner enters response, likely will fail
-# 4: on issue_comment.created (learner answered)
-#     - bot validates response
-#     - bot explains topics, name, description, url
-#     - asks learner to merge
-# 5: on pr.closed (learner merged)
-#     - bot creates PR about templates
-#     - challenge question: 4 different screenshots of bug reports -- which is the right one? 
-#     - learner answers (no right answer)
+- title: Answer the owner challenge
+  description: Answer the owner challenge
+  event: pull_request.edited
+  actions:
+  - type: respond
+    with: repo-owner-answer.md
+
+- title: Merge the ownership PR
+  description: Merge the ownership PR
+  event: pull_request.closed
+  actions:
+  - type: createPullRequest
+    title: Create discoverable repos
+    head: discoverable-repos
+    body: discoverable.md
+    action_id: discoverablePR
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.discoverablePR.data.html_url%'  
+
+- title: Answer the discoverability challenge
+  description: Answer the discoverability challenge
+  event: issue_comment.created
+  actions:
+  - type: respond
+    with: discoverability-answer.md
+  
+- title: Merge the discoverability PR
+  description: Merge the discoverability PR
+  event: pull_request.closed
+  actions:
+  - type: createPullRequest
+    title: Issue and PR templates
+    head: templates
+    body: templates.md
+    action_id: templatesPR
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.templatesPR.data.html_url%'
+      
 # 6: on issue_comment.edited (learner voted)
 #     - bot responds why there's no right answer
 #     - bot talks about issue and PR templates examples
