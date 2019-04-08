@@ -95,26 +95,70 @@ steps:
     data:
       url: '%actions.workflowsPR.data.html_url%'
 
-# 8: on issue_comment.created (learner answered)
-#     - bot validates
-#     - bot explains items in the PR, will be combinations of information about branch protections, example workflows, CODEOWNERS, deployment, etc
-#     - asks learner to merge 
-# 9: on pr.closed (learner merged)
-#     - bot creates PR about Project management
-#     - challenge: what should you work on? screenshot of issues
-#     - learner chooses one
-# 10: on issue_comment.edited (learner voted)
-#     - bot explains that since no project management is involved, any answer is fair game
-#     - bot explains docs in PR, lightweight project management on GitHub, explicitly calling out project management strategies
-#     - asks learner to merge
-# 11: on pr.closed (learner merge)
-#     - bot creates PR about measuring success
-#     - challenge question: what might be some ways to measure success? 
-#     - learner votes
-# 12: on issue_comment.edited (learner voted)
-#     - bot validates, most of the checked answers are probably right
-#     - bot references PR docs, talks about measuring strategies
-#     - asks learner to merge
-# 13: on pr.closed (learner merged)
-#     - bot opens final issue, explaining what to do with this repo, includes instructions about forking or cloning
-#     - bot congratulates learner on completion, recommends next steps
+#8
+- title: Answer the workflows challenge question
+  description: Answer the workflows challenge question
+  event: issue_comment.created
+  actions:
+  - type: respond
+    with: workflows-answer.md
+
+#9
+- title: Project management
+  description: Project management
+  event: pull_request.closed
+  actions:
+  - type: createPullRequest
+    title: Managing projects on GitHub
+    head: projects
+    body: projects.md
+    action_id: projectsPR
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.projectsPR.data.html_url%'
+
+#10 
+- title: Answer the project management challenge
+  description: Answer the project management challenge
+  event: issue_comment.created
+  actions:
+  - type: respond
+    with: projecs-answer.md
+
+#11
+- title: Measuring success
+  description: Measuring success
+  event: pull_request.closed
+  actions:
+  - type: createPullRequest
+    title: Measuring success
+    head: metrics
+    body: metrics.md
+    action_id: metricsPR
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.metricsPR.data.html_url%'
+
+#12
+- title: Answer the success metrics challenge
+  description: Answer the success metrics challenge
+  event: issue_comment.created
+  actions:
+  - type: respond
+    with: metrics-answer.md
+
+#13
+- title: Merge the final PR
+  description: Merge the final PR
+  event: pull_request.closed
+  actions:
+  - type: createIssue
+    title: Congratulations
+    body: congratulations.md
+    action_id: congratulationsIssue
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.congratulationsIssue.data.html_url%'
