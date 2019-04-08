@@ -124,7 +124,7 @@ steps:
   event: issue_comment.created
   actions:
   - type: respond
-    with: projecs-answer.md
+    with: projects-answer.md
 
 #11
 - title: Measuring success
