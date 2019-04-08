@@ -2,14 +2,25 @@ title: Discover and reuse projects within your organization
 tagline: Discover and reuse projects within your organization
 description: Discover and reuse projects within your organization
 template:
-    name: innersource
-    repo: false
-steps:
+  name: innersource
+  repo: false
+before:
+- type: createIssue
+  title: Welcome
+  body: |
+    "- response explains we're creating an internal innersource commons, as we work on this repo we'll be creating a resource others can use within your organization
+    - response explains that this repo can continue to be used after the course is finished
+    - response explains that we'll start every new issue/PR with a challenge that will hopefully explain why Innersource is important"
 
-# 0: before: Open a welcome issue
-#     - response explains we're creating an internal innersource commons, as we work on this repo we'll be creating a resource others can use within your organization
-#     - response explains that this repo can continue to be used after the course is finished
-#     - response explains that we'll start every new issue/PR with a challenge that will hopefully explain why Innersource is important
+steps:
+- title: Close an issue
+  event: issues.closed
+  description: Close an issue
+  actions:
+  - type: respond
+    with: |
+      "hi!"
+
 # 1: on issues.closed
 #     - Open PR for repo ownership
 #     - response contains challenge question: true/false there is a repository at https://github.com/githubtraining/training-manual
