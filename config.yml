@@ -3,28 +3,27 @@ tagline: Discover and reuse projects within your organization
 description: Discover and reuse projects within your organization
 template:
   name: innersource
-  repo: false
+  repo: innersource-template
 before:
 - type: createIssue
   title: Welcome
-  body: |
-    "- response explains we're creating an internal innersource commons, as we work on this repo we'll be creating a resource others can use within your organization
-    - response explains that this repo can continue to be used after the course is finished
-    - response explains that we'll start every new issue/PR with a challenge that will hopefully explain why Innersource is important"
+  body: welcome.md
 
 steps:
 - title: Close an issue
   event: issues.closed
   description: Close an issue
   actions:
+  - type: createPullRequest
+    title: Repository ownership and names
+    head: repo-owner
+    body: repo-owner.md
+    action_id: ownerPR
   - type: respond
-    with: |
-      "hi!"
+    with: goto-pr.md
+    data: 
+      url: '%actions.ownerPR.data.html_url%'
 
-# 1: on issues.closed
-#     - Open PR for repo ownership
-#     - response contains challenge question: true/false there is a repository at https://github.com/githubtraining/training-manual
-#         - answer: true, it _does_ exist, but it is a repository private to the github organization, so it's not visible, this is because of org permissions. Private repositories in the org are only visible by members of that org
 # 2: on issue_comment.edited (learner voted)
 #     - bot validates guess, drops explanations
 #     - response explains ownership of repositories, name of repositories
