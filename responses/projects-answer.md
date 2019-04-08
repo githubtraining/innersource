@@ -1,4 +1,7 @@
-10: on issue_comment.edited (learner voted)
-    - bot explains that since no project management is involved, any answer is fair game
-    - bot explains docs in PR, lightweight project management on GitHub, explicitly calling out project management strategies
-    - asks learner to merge
+### Answer :crystal_ball:
+
+Without a clear project management strategy, you might as well pick any issue.
+
+Being explicit about your project management tool, whether it's inside of GitHub or elsewhere, will help potential contributors figure out whether their contribution will be immediately beneficial or triaged. 
+
+I'll respond when you merge this PR. 

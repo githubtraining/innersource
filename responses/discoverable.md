@@ -1,4 +1,9 @@
-3: on pr.closed (learner merged)
-- bot opens PR for creating discoverable repos
-- challenge question: what is this repository for? screenshot of a repo with no README, topics, etc
-- learner enters response, likely will fail
+This PR is all about how to make your repositories more discoverable.
+
+### Challenge question
+
+What is this repository for?
+
+[SCREENSHOT OF BARE REPOSITORY WITHOUT DOCS]
+
+I'll respond when I detect you've submitted a comment on this PR.

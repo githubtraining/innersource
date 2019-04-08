@@ -1,4 +1,7 @@
-6: on issue_comment.edited (learner voted)
-- bot responds why there's no right answer
-- bot talks about issue and PR templates examples
-- asks learner to merge
+### Answer :crystal_ball:
+
+Every project _can_ have a different way to submit bug reports, so all the answers are right. 
+
+But, how could you know? With issue and pull request templates, you can take the mystery out of the equation and allow anyone across the organization to know the way each project prefers to receive issues and contributions.
+
+Please merge this PR.

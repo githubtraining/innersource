@@ -1,4 +1,7 @@
-11: on pr.closed (learner merge)
-    - bot creates PR about measuring success
-    - challenge question: what might be some ways to measure success? 
-    - learner votes
+Once you've implemented Innersource strategies, how do you know it's working? 
+
+### Challenge question
+
+What might be some ways to measure the success of Innersource strategies?
+
+I'll respond when you submit a comment to this PR. 

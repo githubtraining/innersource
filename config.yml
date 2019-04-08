@@ -75,7 +75,7 @@ steps:
 #6
 - title: Answer the templates challenge question
   description: Answer the templates challenge question
-  event: issue_comment.created
+  event: pull_request.edited
   actions:
   - type: respond
     with: templates-answer.md
@@ -98,7 +98,7 @@ steps:
 #8
 - title: Answer the workflows challenge question
   description: Answer the workflows challenge question
-  event: issue_comment.created
+  event: pull_request.edited
   actions:
   - type: respond
     with: workflows-answer.md
@@ -121,7 +121,7 @@ steps:
 #10 
 - title: Answer the project management challenge
   description: Answer the project management challenge
-  event: issue_comment.created
+  event: pull_request.edited
   actions:
   - type: respond
     with: projects-answer.md
