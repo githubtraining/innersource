@@ -14,6 +14,7 @@ steps:
 #1
 - title: Close an issue
   description: Close an issue
+  link: '{{ repoUrl }}/issues/1'
   event: issues.closed
   actions:
   - type: createPullRequest
