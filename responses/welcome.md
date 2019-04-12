@@ -1,6 +1,6 @@
 This repository will eventually be a working web site that you'll be able to publish internally as your own Innersource commons.
 
-[IMAGE OF FINAL PRODUCT]
+![screenshot of final product](https://user-images.githubusercontent.com/16547949/56064057-f1f17700-5d3e-11e9-9100-9678dc91c544.png)
 
 As we work on this repo, we'll be creating a resource others can use within your organization. This repo can continue to be used after the course is finished. 
 
