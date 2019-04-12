@@ -1,3 +1,5 @@
+### Answer :crystal_ball
+
 Innersource and open source are very similar concepts, but they're not the same.
 
 **Open source** software is shared publicly and typically accepts contributions from contributors outside of an organization.
