@@ -2,10 +2,14 @@ This PR covers a few common workflow that are likely in use within your organiza
 
 ### Challenge question
 
-I'd like to contribute to this repository. Which branch should I target my changes for? 
+Suppose you'd like to contribute to the repository whose branches are pictured below. Which branch should I use as a base for my contributions?
+
+![a screenshot of a repository's branches, they are: a protected master branch, a protected release-v1.0 branch. The rest are unprotected: bug-fix, green-colors, config-release-drafter, add-template](https://user-images.githubusercontent.com/16547949/56039935-5d1d5800-5d03-11e9-8a26-29d36cfc7499.png)
+
 - [ ] `master`
-- [ ] `release-candidate`
-- [ ] `dev`
-- [ ] Don't know
+- [ ] `release-v1.0`
+- [ ] `bug-fix`
+- [ ] `green-colors`
+- [ ] `config-release-drafter`
 
 I'll respond when I detect you've checked one of the boxes above. 

@@ -162,6 +162,10 @@ steps:
     title: Congratulations
     body: congratulations.md
     action_id: congratulationsIssue
+    data:
+      learningPathURL: 'https://github-learning-lab-staging.herokuapp.com/githubtraining/paths/innersource:-theory-to-practice'
+      forkURL: '%payload.repository.html_url%/fork'
+      downloadURL: '%payload.repository.html_url%/archive/master.zip'
   - type: respond
     with: goto-pr.md
     data:
