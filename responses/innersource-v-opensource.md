@@ -1,4 +1,4 @@
-### Answer :crystal_ball
+### Answer :crystal_ball:
 
 Innersource and open source are very similar concepts, but they're not the same.
 

@@ -1,10 +1,10 @@
-This to discuss project management!
+It's time to discuss project management!
 
 ### Challenge question
 
 Here's some open issues in this company project. You're eager to help with this project. Which issue should you work on?
 
-![screenshot of a repository with 5 open issues, none without labels and all opened by @githubteacher. The issues are: restyle the slides, improve the readme, add a caption to an existing slide, add a new slide, activity 1: your first caption](https://user-images.githubusercontent.com/16547949/56040343-30b60b80-5d04-11e9-90c7-58e9791b8ebf.png)
+![screenshot of a repository with 5 open issues, none without labels and all opened by @githubteacher. The issues are: restyle the slides, improve the readme, add a caption to an existing slide, add a new slide, activity 1: your first caption](https://user-images.githubusercontent.com/16547949/56059253-a84e5f80-5d31-11e9-8acf-6ff46729019b.png)
 
 - [ ] Issue 6: Restyle the slides
 - [ ] Issue 5: Improve the README
