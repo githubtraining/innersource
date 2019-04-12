@@ -9,4 +9,13 @@ This is how this course will move along:
 - you'll answer the challenge question; don't worry, there are no right or wrong answers
 - the question will highlight why each topic is an important part of applying Innersource practices right
 
-Close this issue for your first challenge.
+Here's your first challenge question!
+
+### Challenge question
+
+Innersource and open source are the same thing.
+
+- [ ] True
+- [ ] False
+
+I'll respond when you select one of the options above.

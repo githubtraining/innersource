@@ -12,11 +12,14 @@ before:
 steps:
 
 #1
-- title: Close an issue
-  description: Close an issue
+- title: Answer your first challenge question
+  description: Answer your first challenge question
   link: '{{ repoUrl }}/issues/1'
-  event: issues.closed
+  event: issues.edited
   actions:
+  - type: respond
+    with: innersource-v-opensource.md
+  - type: closeIssue
   - type: createPullRequest
     title: Repository ownership and names
     head: repo-owner
