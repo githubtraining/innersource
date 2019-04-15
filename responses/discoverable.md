@@ -4,6 +4,6 @@ This PR is all about how to make your repositories more discoverable.
 
 What is this repository for?
 
-![screenshot of a repository with no description, link, or and just a few folders: .github, .vscode, _appendix, _events, _includes, _layouts](https://user-images.githubusercontent.com/16547949/56039355-2430b380-5d02-11e9-999c-aa139a8146c2.png)
+![gif of a repository with no description, link, or and just a few folders: .github, .vscode, _appendix, _events, _includes, _layouts](https://user-images.githubusercontent.com/6351798/56160925-995feb00-5f85-11e9-8a91-a611936c98bd.gif)
 
 I'll respond when I detect you've submitted a comment on this PR.
