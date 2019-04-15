@@ -2,7 +2,7 @@
 
 A repository _does_ exist at githubtraining/training-manual, but it is private.
 
-![screenshot of repository, pointing to ownership by githubtraining organization, and to a private visibility](https://user-images.githubusercontent.com/16547949/56038959-31996e00-5d01-11e9-8a08-5dadb0f026ce.png)
+![gif of repository, pointing to ownership by githubtraining organization, and to a private visibility](https://user-images.githubusercontent.com/6351798/56159957-32413700-5f83-11e9-90f6-c1b64ade39c4.gif)
 
 <details>
 <summary>Why can't you see it then? Review the <b>Files Changed</b> tab and see if you can figure it out. Collapse this text if you'd like an explanation.</summary>
