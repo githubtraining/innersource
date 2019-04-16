@@ -9,6 +9,16 @@ before:
   title: Welcome
   body: welcome.md
 
+# Course artifacts:
+# 1. Issue: Welcome
+# 2. PR: Repository ownership and names
+# 3. PR: Create discoverable repos
+# 4. PR: Issue and PR templates
+# 5. PR: Workflows
+# 6. PR: Managing projects on GitHub
+# 7. PR: Measuring success
+# 8: Issue: Congratulations
+
 steps:
 
 #1
@@ -33,6 +43,7 @@ steps:
 #2
 - title: Answer the owner challenge
   description: Answer the owner challenge
+  link: '{{ repoUrl }}/pull/2'
   event: pull_request.edited
   actions:
   - type: respond
@@ -41,6 +52,7 @@ steps:
 #3
 - title: Merge the ownership PR
   description: Merge the ownership PR
+  link: '{{ repoUrl }}/pull/2'
   event: pull_request.closed
   actions:
   - type: createPullRequest
@@ -56,6 +68,7 @@ steps:
 #4
 - title: Answer the discoverability challenge
   description: Answer the discoverability challenge
+  link: '{{ repoUrl }}/pull/3'
   event: issue_comment.created
   actions:
   - type: respond
@@ -64,6 +77,7 @@ steps:
 #5
 - title: Merge the discoverability PR
   description: Merge the discoverability PR
+  link: '{{ repoUrl }}/pull/3'
   event: pull_request.closed
   actions:
   - type: createPullRequest
@@ -79,6 +93,7 @@ steps:
 #6
 - title: Answer the templates challenge question
   description: Answer the templates challenge question
+  link: '{{ repoUrl }}/pull/4'
   event: pull_request.edited
   actions:
   - type: respond
@@ -87,6 +102,7 @@ steps:
 #7
 - title: Merge the templates PR
   description: Merge the templates PR
+  link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
   - type: createPullRequest
@@ -102,6 +118,7 @@ steps:
 #8
 - title: Answer the workflows challenge question
   description: Answer the workflows challenge question
+  link: '{{ repoUrl }}/pull/5'
   event: pull_request.edited
   actions:
   - type: respond
@@ -110,6 +127,7 @@ steps:
 #9
 - title: Project management
   description: Project management
+  link: '{{ repoUrl }}/pull/5'
   event: pull_request.closed
   actions:
   - type: createPullRequest
@@ -125,6 +143,7 @@ steps:
 #10 
 - title: Answer the project management challenge
   description: Answer the project management challenge
+  link: '{{ repoUrl }}/pull/6'
   event: pull_request.edited
   actions:
   - type: respond
@@ -133,6 +152,7 @@ steps:
 #11
 - title: Measuring success
   description: Measuring success
+  link: '{{ repoUrl }}/pull/6'
   event: pull_request.closed
   actions:
   - type: createPullRequest
@@ -148,6 +168,7 @@ steps:
 #12
 - title: Answer the success metrics challenge
   description: Answer the success metrics challenge
+  link: '{{ repoUrl }}/pull/7'
   event: issue_comment.created
   actions:
   - type: respond
@@ -156,6 +177,7 @@ steps:
 #13
 - title: Merge the final PR
   description: Merge the final PR
+  link: '{{ repoUrl }}/pull/7'
   event: pull_request.closed
   actions:
   - type: createIssue
