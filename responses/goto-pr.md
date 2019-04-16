@@ -1,1 +1,2 @@
-Go to the [next pull request]({{ url }}).
+You can find your next steps in your [next pull request]({{ url }}).
+
