@@ -199,7 +199,7 @@ steps:
     issue: Publish your toolkit
     with: congratulations.md
     data:
-      deploymentURL: 'https://%payload.repository.owner.login%/github.io/%payload.repository.name%'
+      deploymentURL: 'https://%payload.repository.owner.login%.github.io/%payload.repository.name%'
       learningPathURL: 'https://github-learning-lab-staging.herokuapp.com/githubtraining/paths/innersource:-theory-to-practice'
       forkURL: '%payload.repository.html_url%/fork'
       downloadURL: '%payload.repository.html_url%/archive/master.zip'
