@@ -23,7 +23,7 @@ steps:
 
 #1
 - title: Answer your first challenge question
-  description: Answer your first challenge question
+  description: Determine the differences between open source and innersource.
   link: '{{ repoUrl }}/issues/1'
   event: issues.edited
   actions:
@@ -41,8 +41,8 @@ steps:
       url: '%actions.ownerPR.data.html_url%'
 
 #2
-- title: Answer the owner challenge
-  description: Answer the owner challenge
+- title: Answer the ownership challenge
+  description: Discover how repository ownership affects visibility and access.
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.edited
   actions:
@@ -50,8 +50,8 @@ steps:
     with: repo-owner-answer.md
 
 #3
-- title: Merge the ownership PR
-  description: Merge the ownership PR
+- title: Merge the ownership pull request
+  description: Beef up your innersource toolkit with resources about repository ownership.
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.closed
   actions:
@@ -67,7 +67,7 @@ steps:
 
 #4
 - title: Answer the discoverability challenge
-  description: Answer the discoverability challenge
+  description: Learn about ways to make your repository easy to discover.
   link: '{{ repoUrl }}/pull/3'
   event: issue_comment.created
   actions:
@@ -75,8 +75,8 @@ steps:
     with: discoverability-answer.md
 
 #5
-- title: Merge the discoverability PR
-  description: Merge the discoverability PR
+- title: Merge the discoverability pull request
+  description: Add resources for making discoverable repositories to your innersource toolkit.
   link: '{{ repoUrl }}/pull/3'
   event: pull_request.closed
   actions:
@@ -92,7 +92,7 @@ steps:
 
 #6
 - title: Answer the templates challenge question
-  description: Answer the templates challenge question
+  description: Determine how template files can help you create easy-to-join projects.
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.edited
   actions:
@@ -100,8 +100,8 @@ steps:
     with: templates-answer.md
 
 #7
-- title: Merge the templates PR
-  description: Merge the templates PR
+- title: Merge the templates pull request
+  description: Add starter templates to your innersource toolkit.
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
@@ -117,7 +117,7 @@ steps:
 
 #8
 - title: Answer the workflows challenge question
-  description: Answer the workflows challenge question
+  description: Discover how being transparent about your workflow can help others contribute.
   link: '{{ repoUrl }}/pull/5'
   event: pull_request.edited
   actions:
@@ -125,8 +125,8 @@ steps:
     with: workflows-answer.md
 
 #9
-- title: Project management
-  description: Project management
+- title: Merge the workflows pull request
+  description: Add branching and workflow strategies to your innersource toolkit.
   link: '{{ repoUrl }}/pull/5'
   event: pull_request.closed
   actions:
@@ -142,7 +142,7 @@ steps:
 
 #10 
 - title: Answer the project management challenge
-  description: Answer the project management challenge
+  description: Learn about how you can surface your project management strategies to potential contributors.
   link: '{{ repoUrl }}/pull/6'
   event: pull_request.edited
   actions:
@@ -150,8 +150,8 @@ steps:
     with: projects-answer.md
 
 #11
-- title: Measuring success
-  description: Measuring success
+- title: Merge the project management pull request
+  description: Beef up your innersource toolkit with project management tips.
   link: '{{ repoUrl }}/pull/6'
   event: pull_request.closed
   actions:
@@ -167,7 +167,7 @@ steps:
 
 #12
 - title: Answer the success metrics challenge
-  description: Answer the success metrics challenge
+  description: Begin thinking about how to measure the success of your innersource program.
   link: '{{ repoUrl }}/pull/7'
   event: issue_comment.created
   actions:
@@ -175,8 +175,8 @@ steps:
     with: metrics-answer.md
 
 #13
-- title: Merge the final PR
-  description: Merge the final PR
+- title: Merge the metrics pull request
+  description: Add possible metrics to your innersource toolkit.
   link: '{{ repoUrl }}/pull/7'
   event: pull_request.closed
   actions:
@@ -190,8 +190,8 @@ steps:
       url: '%actions.publishIssue.data.html_url%'
 
 #14
-- title: Turn on GitHub Pages
-  description: Turn on GitHub Pages
+- title: Enable GitHub Pages
+  description: Publish your innersource toolkit by turning on GitHub Pages. 
   link: '{{ repoUrl }}/pull/8'
   event: deployment
   actions:
