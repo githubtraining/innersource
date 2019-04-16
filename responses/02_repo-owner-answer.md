@@ -14,6 +14,7 @@ Here are some recommendations based on some :sparkles: use of GitHub that we've 
 - Aim for as few organizations as possible. Remember, each organization is a black box to those outside of that organization.
 - Name your repositories in a meaningful manner. Usually a simple project or application name will suffice.
 </summary>
+</details>
 
 Please merge this pull request.
 
