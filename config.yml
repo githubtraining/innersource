@@ -17,7 +17,7 @@ before:
 # 5. PR: Workflows
 # 6. PR: Managing projects on GitHub
 # 7. PR: Measuring success
-# 8: Issue: Congratulations
+# 8: Issue: Publish your toolkit
 
 steps:
 
@@ -181,14 +181,25 @@ steps:
   event: pull_request.closed
   actions:
   - type: createIssue
-    title: Congratulations
-    body: congratulations.md
-    action_id: congratulationsIssue
-    data:
-      learningPathURL: 'https://github-learning-lab-staging.herokuapp.com/githubtraining/paths/innersource:-theory-to-practice'
-      forkURL: '%payload.repository.html_url%/fork'
-      downloadURL: '%payload.repository.html_url%/archive/master.zip'
+    title: Publish your toolkit
+    body: publish.md
+    action_id: publishIssue
   - type: respond
     with: goto-pr.md
     data:
-      url: '%actions.congratulationsIssue.data.html_url%'
+      url: '%actions.publishIssue.data.html_url%'
+
+#14
+- title: Turn on GitHub Pages
+  description: Turn on GitHub Pages
+  link: '{{ repoUrl }}/pull/8'
+  event: deployment
+  actions:
+  - type: respond
+    issue: Publish your toolkit
+    with: congratulations.md
+    data:
+      deploymentURL: 'https://%payload.repository.owner.login%/github.io/%payload.repository.name%'
+      learningPathURL: 'https://github-learning-lab-staging.herokuapp.com/githubtraining/paths/innersource:-theory-to-practice'
+      forkURL: '%payload.repository.html_url%/fork'
+      downloadURL: '%payload.repository.html_url%/archive/master.zip'

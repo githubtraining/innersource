@@ -1,6 +1,6 @@
 # :tada: Congratulations
 
-You are finished with this course. You can see a deployed version of our work together at [LINK]. Feel free to share this link directly with others, or you can save the resources in one of the following ways.
+You are finished with this course. You can see a deployed version of our work together at [your new GitHub Pages site]({{ deploymentURL }}). Feel free to share this link directly with others, or you can save the resources in one of the following ways.
 
 ### Saving course resources
 
