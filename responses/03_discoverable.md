@@ -1,4 +1,4 @@
-This PR is all about how to make your repositories more discoverable.
+This pull request is all about how to make your repositories more discoverable.
 
 ### Challenge question
 
