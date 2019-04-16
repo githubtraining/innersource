@@ -7,7 +7,7 @@ template:
 before:
 - type: createIssue
   title: Welcome
-  body: welcome.md
+  body: 00_welcome.md
 - type: updateBranchProtection
 
 # Course artifacts:
@@ -29,17 +29,15 @@ steps:
   event: issues.edited
   actions:
   - type: respond
-    with: innersource-v-opensource.md
+    with: 01_innersource-v-opensource.md
+    data: 
+      url: '%actions.ownerPR.data.html_url%'
   - type: closeIssue
   - type: createPullRequest
     title: Repository ownership and names
     head: repo-owner
-    body: repo-owner.md
+    body: 01_repo-owner.md
     action_id: ownerPR
-  - type: respond
-    with: goto-pr.md
-    data: 
-      url: '%actions.ownerPR.data.html_url%'
 
 #2
 - title: Answer the ownership challenge
@@ -49,7 +47,7 @@ steps:
   actions:
   - type: removeBranchProtection
   - type: respond
-    with: repo-owner-answer.md
+    with: 02_repo-owner-answer.md
 
 #3
 - title: Merge the ownership pull request
@@ -61,7 +59,7 @@ steps:
   - type: createPullRequest
     title: Create discoverable repos
     head: discoverable-repos
-    body: discoverable.md
+    body: 03_discoverable.md
     action_id: discoverablePR
   - type: respond
     with: goto-pr.md
@@ -76,7 +74,7 @@ steps:
   actions:
   - type: removeBranchProtection
   - type: respond
-    with: discoverability-answer.md
+    with: 04_discoverability-answer.md
 
 #5
 - title: Merge the discoverability pull request
@@ -88,7 +86,7 @@ steps:
   - type: createPullRequest
     title: Issue and PR templates
     head: templates
-    body: templates.md
+    body: 05_templates.md
     action_id: templatesPR
   - type: respond
     with: goto-pr.md
@@ -103,7 +101,7 @@ steps:
   actions:
   - type: removeBranchProtection
   - type: respond
-    with: templates-answer.md
+    with: 06_templates-answer.md
 
 #7
 - title: Merge the templates pull request
@@ -115,7 +113,7 @@ steps:
   - type: createPullRequest
     title: Workflows
     head: workflows
-    body: workflows.md
+    body: 07_workflows.md
     action_id: workflowsPR
   - type: respond
     with: goto-pr.md
@@ -130,7 +128,7 @@ steps:
   actions:
   - type: removeBranchProtection
   - type: respond
-    with: workflows-answer.md
+    with: 08_workflows-answer.md
 
 #9
 - title: Merge the workflows pull request
@@ -142,7 +140,7 @@ steps:
   - type: createPullRequest
     title: Managing projects on GitHub
     head: projects
-    body: projects.md
+    body: 09_projects.md
     action_id: projectsPR
   - type: respond
     with: goto-pr.md
@@ -157,7 +155,7 @@ steps:
   actions:
   - type: removeBranchProtection
   - type: respond
-    with: projects-answer.md
+    with: 10_projects-answer.md
 
 #11
 - title: Merge the project management pull request
@@ -169,7 +167,7 @@ steps:
   - type: createPullRequest
     title: Measuring success
     head: metrics
-    body: metrics.md
+    body: 11_metrics.md
     action_id: metricsPR
   - type: respond
     with: goto-pr.md
@@ -184,7 +182,7 @@ steps:
   actions:
   - type: removeBranchProtection
   - type: respond
-    with: metrics-answer.md
+    with: 12_metrics-answer.md
 
 #13
 - title: Merge the metrics pull request
@@ -195,7 +193,7 @@ steps:
   - type: updateBranchProtection
   - type: createIssue
     title: Publish your toolkit
-    body: publish.md
+    body: 13_publish.md
     action_id: publishIssue
   - type: respond
     with: goto-pr.md
@@ -211,7 +209,7 @@ steps:
   - type: removeBranchProtection
   - type: respond
     issue: Publish your toolkit
-    with: congratulations.md
+    with: 14_congratulations.md
     data:
       deploymentURL: 'https://%payload.repository.owner.login%.github.io/%payload.repository.name%'
       learningPathURL: 'https://github-learning-lab-staging.herokuapp.com/githubtraining/paths/innersource:-theory-to-practice'
