@@ -29,16 +29,14 @@ steps:
   actions:
   - type: respond
     with: innersource-v-opensource.md
+    data: 
+      url: '%actions.ownerPR.data.html_url%'
   - type: closeIssue
   - type: createPullRequest
     title: Repository ownership and names
     head: repo-owner
     body: repo-owner.md
     action_id: ownerPR
-  - type: respond
-    with: goto-pr.md
-    data: 
-      url: '%actions.ownerPR.data.html_url%'
 
 #2
 - title: Answer the ownership challenge
