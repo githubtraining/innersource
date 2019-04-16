@@ -12,4 +12,6 @@ You are finished with this course. You can see a deployed version of our work to
     - If your organization is on GitHub.com, [fork it]({{ forkURL }}).
     - If your organization is on GitHub Enterprise Server, [transfer the repository](https://help.github.com/enterprise/2.2/admin/articles/moving-a-repository-from-github-com-to-github-enterprise)
 
+I won't monitor any further events in this repository.
+
 Your next steps are in the [Innersource learning path]({{ learningPathURL }}).

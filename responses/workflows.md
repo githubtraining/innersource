@@ -1,4 +1,4 @@
-This PR covers a few common workflow that are likely in use within your organization.
+This PR covers a few common workflows that are likely in use within your organization.
 
 ### Challenge question
 
@@ -12,4 +12,5 @@ Suppose you'd like to contribute to the repository whose branches are pictured b
 - [ ] `green-colors`
 - [ ] `config-release-drafter`
 
-I'll respond when I detect you've checked one of the boxes above. 
+<hr>
+<h3 align="center">I'll respond when you check one of the boxes above.</h3>

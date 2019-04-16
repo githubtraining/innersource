@@ -9,4 +9,5 @@ Here are four different ways you could submit a bug report. Which is the _right_
 - [ ] Open an internal support ticket
 - [ ] DM or email the maintainer
 
-I'll respond when you check one of the boxes above. 
+<hr>
+<h3 align="center">I'll respond when you check one of the boxes above.</h3>

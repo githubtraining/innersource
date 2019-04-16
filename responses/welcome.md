@@ -18,4 +18,5 @@ Innersource and open source are the same thing.
 - [ ] True
 - [ ] False
 
-I'll respond when you select one of the options above.
+<hr>
+<h3 align="center">I'll respond when you check one of the boxes above.</h3>

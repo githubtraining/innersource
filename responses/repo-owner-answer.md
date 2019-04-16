@@ -16,3 +16,6 @@ Here are some recommendations based on some :sparkles: use of GitHub that we've 
 </summary>
 
 Please merge this PR.
+
+<hr>
+<h3 align="center">I'll respond when you merge this pull request.</h3>

@@ -8,4 +8,7 @@ This PR covers the basics, but here are some recommendations to help any contrib
 - if you haven't picked a workflow, use a common and well documented one that your contributors can easily search for
 - be explicit about your deployment and release strategy
 
-I'll respond when you merge this PR.
+Please merge this PR.
+
+<hr>
+<h3 align="center">I'll respond when you merge this pull request.</h3>
