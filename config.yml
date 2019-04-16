@@ -8,6 +8,7 @@ before:
 - type: createIssue
   title: Welcome
   body: welcome.md
+- type: updateBranchProtection
 
 # Course artifacts:
 # 1. Issue: Welcome
@@ -46,6 +47,7 @@ steps:
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.edited
   actions:
+  - type: removeBranchProtection
   - type: respond
     with: repo-owner-answer.md
 
@@ -55,6 +57,7 @@ steps:
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Create discoverable repos
     head: discoverable-repos
@@ -71,6 +74,7 @@ steps:
   link: '{{ repoUrl }}/pull/3'
   event: issue_comment.created
   actions:
+  - type: removeBranchProtection
   - type: respond
     with: discoverability-answer.md
 
@@ -80,6 +84,7 @@ steps:
   link: '{{ repoUrl }}/pull/3'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Issue and PR templates
     head: templates
@@ -96,6 +101,7 @@ steps:
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.edited
   actions:
+  - type: removeBranchProtection
   - type: respond
     with: templates-answer.md
 
@@ -105,6 +111,7 @@ steps:
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Workflows
     head: workflows
@@ -121,6 +128,7 @@ steps:
   link: '{{ repoUrl }}/pull/5'
   event: pull_request.edited
   actions:
+  - type: removeBranchProtection
   - type: respond
     with: workflows-answer.md
 
@@ -130,6 +138,7 @@ steps:
   link: '{{ repoUrl }}/pull/5'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Managing projects on GitHub
     head: projects
@@ -146,6 +155,7 @@ steps:
   link: '{{ repoUrl }}/pull/6'
   event: pull_request.edited
   actions:
+  - type: removeBranchProtection
   - type: respond
     with: projects-answer.md
 
@@ -155,6 +165,7 @@ steps:
   link: '{{ repoUrl }}/pull/6'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Measuring success
     head: metrics
@@ -171,6 +182,7 @@ steps:
   link: '{{ repoUrl }}/pull/7'
   event: issue_comment.created
   actions:
+  - type: removeBranchProtection
   - type: respond
     with: metrics-answer.md
 
@@ -180,6 +192,7 @@ steps:
   link: '{{ repoUrl }}/pull/7'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createIssue
     title: Publish your toolkit
     body: publish.md
@@ -195,6 +208,7 @@ steps:
   link: '{{ repoUrl }}/pull/8'
   event: deployment
   actions:
+  - type: removeBranchProtection
   - type: respond
     issue: Publish your toolkit
     with: congratulations.md
