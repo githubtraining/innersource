@@ -1,52 +1,66 @@
 title: Discover and reuse projects within your organization
-tagline: Discover and reuse projects within your organization
-description: Discover and reuse projects within your organization
+tagline: High level yet impactful innersource concepts to help transform your organization.
+description: Organizations of all sizes and in all industries are chatting about innersource concepts. This course walks you through some of the key concepts of innersource and helps you build up an internal toolkit for adopting innersource practices. 
 template:
   name: innersource
   repo: innersource-template
 before:
 - type: createIssue
   title: Welcome
-  body: welcome.md
+  body: 00_welcome.md
+- type: updateBranchProtection
+
+# Course artifacts:
+# 1. Issue: Welcome
+# 2. PR: Repository ownership and names
+# 3. PR: Create discoverable repos
+# 4. PR: Issue and PR templates
+# 5. PR: Workflows
+# 6. PR: Managing projects on GitHub
+# 7. PR: Measuring success
+# 8: Issue: Publish your toolkit
 
 steps:
 
 #1
 - title: Answer your first challenge question
-  description: Answer your first challenge question
+  description: Determine the differences between open source and innersource.
   link: '{{ repoUrl }}/issues/1'
   event: issues.edited
   actions:
-  - type: respond
-    with: innersource-v-opensource.md
-  - type: closeIssue
   - type: createPullRequest
     title: Repository ownership and names
     head: repo-owner
-    body: repo-owner.md
+    body: 01_repo-owner.md
     action_id: ownerPR
   - type: respond
-    with: goto-pr.md
+    with: 01_innersource-v-opensource.md
     data: 
       url: '%actions.ownerPR.data.html_url%'
+  - type: closeIssue
+
 
 #2
-- title: Answer the owner challenge
-  description: Answer the owner challenge
+- title: Answer the ownership challenge
+  description: Discover how repository ownership affects visibility and access.
+  link: '{{ repoUrl }}/pull/2'
   event: pull_request.edited
   actions:
+  - type: removeBranchProtection
   - type: respond
-    with: repo-owner-answer.md
+    with: 02_repo-owner-answer.md
 
 #3
-- title: Merge the ownership PR
-  description: Merge the ownership PR
+- title: Merge the ownership pull request
+  description: Beef up your innersource toolkit with resources about repository ownership.
+  link: '{{ repoUrl }}/pull/2'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Create discoverable repos
     head: discoverable-repos
-    body: discoverable.md
+    body: 03_discoverable.md
     action_id: discoverablePR
   - type: respond
     with: goto-pr.md
@@ -55,21 +69,25 @@ steps:
 
 #4
 - title: Answer the discoverability challenge
-  description: Answer the discoverability challenge
+  description: Learn about ways to make your repository easy to discover.
+  link: '{{ repoUrl }}/pull/3'
   event: issue_comment.created
   actions:
+  - type: removeBranchProtection
   - type: respond
-    with: discoverability-answer.md
+    with: 04_discoverability-answer.md
 
 #5
-- title: Merge the discoverability PR
-  description: Merge the discoverability PR
+- title: Merge the discoverability pull request
+  description: Add resources for making discoverable repositories to your innersource toolkit.
+  link: '{{ repoUrl }}/pull/3'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Issue and PR templates
     head: templates
-    body: templates.md
+    body: 05_templates.md
     action_id: templatesPR
   - type: respond
     with: goto-pr.md
@@ -78,21 +96,25 @@ steps:
 
 #6
 - title: Answer the templates challenge question
-  description: Answer the templates challenge question
+  description: Determine how template files can help you create easy-to-join projects.
+  link: '{{ repoUrl }}/pull/4'
   event: pull_request.edited
   actions:
+  - type: removeBranchProtection
   - type: respond
-    with: templates-answer.md
+    with: 06_templates-answer.md
 
 #7
-- title: Merge the templates PR
-  description: Merge the templates PR
+- title: Merge the templates pull request
+  description: Add starter templates to your innersource toolkit.
+  link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Workflows
     head: workflows
-    body: workflows.md
+    body: 07_workflows.md
     action_id: workflowsPR
   - type: respond
     with: goto-pr.md
@@ -101,21 +123,25 @@ steps:
 
 #8
 - title: Answer the workflows challenge question
-  description: Answer the workflows challenge question
+  description: Discover how being transparent about your workflow can help others contribute.
+  link: '{{ repoUrl }}/pull/5'
   event: pull_request.edited
   actions:
+  - type: removeBranchProtection
   - type: respond
-    with: workflows-answer.md
+    with: 08_workflows-answer.md
 
 #9
-- title: Project management
-  description: Project management
+- title: Merge the workflows pull request
+  description: Add branching and workflow strategies to your innersource toolkit.
+  link: '{{ repoUrl }}/pull/5'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Managing projects on GitHub
     head: projects
-    body: projects.md
+    body: 09_projects.md
     action_id: projectsPR
   - type: respond
     with: goto-pr.md
@@ -124,21 +150,25 @@ steps:
 
 #10 
 - title: Answer the project management challenge
-  description: Answer the project management challenge
+  description: Learn about how you can surface your project management strategies to potential contributors.
+  link: '{{ repoUrl }}/pull/6'
   event: pull_request.edited
   actions:
+  - type: removeBranchProtection
   - type: respond
-    with: projects-answer.md
+    with: 10_projects-answer.md
 
 #11
-- title: Measuring success
-  description: Measuring success
+- title: Merge the project management pull request
+  description: Beef up your innersource toolkit with project management tips.
+  link: '{{ repoUrl }}/pull/6'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createPullRequest
     title: Measuring success
     head: metrics
-    body: metrics.md
+    body: 11_metrics.md
     action_id: metricsPR
   - type: respond
     with: goto-pr.md
@@ -147,26 +177,42 @@ steps:
 
 #12
 - title: Answer the success metrics challenge
-  description: Answer the success metrics challenge
+  description: Begin thinking about how to measure the success of your innersource program.
+  link: '{{ repoUrl }}/pull/7'
   event: issue_comment.created
   actions:
+  - type: removeBranchProtection
   - type: respond
-    with: metrics-answer.md
+    with: 12_metrics-answer.md
 
 #13
-- title: Merge the final PR
-  description: Merge the final PR
+- title: Merge the metrics pull request
+  description: Add possible metrics to your innersource toolkit.
+  link: '{{ repoUrl }}/pull/7'
   event: pull_request.closed
   actions:
+  - type: updateBranchProtection
   - type: createIssue
-    title: Congratulations
-    body: congratulations.md
-    action_id: congratulationsIssue
-    data:
-      learningPathURL: 'https://github-learning-lab-staging.herokuapp.com/githubtraining/paths/innersource:-theory-to-practice'
-      forkURL: '%payload.repository.html_url%/fork'
-      downloadURL: '%payload.repository.html_url%/archive/master.zip'
+    title: Publish your toolkit
+    body: 13_publish.md
+    action_id: publishIssue
   - type: respond
     with: goto-pr.md
     data:
-      url: '%actions.congratulationsIssue.data.html_url%'
+      url: '%actions.publishIssue.data.html_url%'
+
+#14
+- title: Enable GitHub Pages
+  description: Publish your innersource toolkit by turning on GitHub Pages. 
+  link: '{{ repoUrl }}/pull/8'
+  event: deployment
+  actions:
+  - type: removeBranchProtection
+  - type: respond
+    issue: Publish your toolkit
+    with: 14_congratulations.md
+    data:
+      deploymentURL: 'https://%payload.repository.owner.login%.github.io/%payload.repository.name%'
+      learningPathURL: 'https://github-learning-lab-staging.herokuapp.com/githubtraining/paths/innersource:-theory-to-practice'
+      forkURL: '%payload.repository.html_url%/fork'
+      downloadURL: '%payload.repository.html_url%/archive/master.zip'

@@ -12,4 +12,5 @@ Here's some open issues in this company project. You're eager to help with this 
 - [ ] Issue 3: Add a new slide
 - [ ] Issue 2: Activity 1: Your first caption
 
-I'll respond when you check one of the boxes above. 
+<hr>
+<h3 align="center">I'll respond when you check one of the answers above.</h3>
