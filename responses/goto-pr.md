@@ -1,1 +1,1 @@
-Go to the [next PR]({{ url }}).
+Go to the [next pull request]({{ url }}).
