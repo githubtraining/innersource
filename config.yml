@@ -1,6 +1,6 @@
-title: Innersource fundamentals
-tagline: High level yet impactful innersource concepts to help transform your organization.
-description: Organizations of all sizes and in all industries are chatting about innersource concepts. This course walks you through some of the key concepts of innersource and helps you build up an internal toolkit for adopting innersource practices. 
+title: InnerSource fundamentals
+tagline: High level yet impactful InnerSource concepts to help transform your organization.
+description: Organizations of all sizes and in all industries are chatting about InnerSource concepts. This course walks you through some of the key concepts of InnerSource and helps you build up an internal toolkit for adopting InnerSource practices. 
 template:
   name: innersource
   repo: innersource-template
@@ -24,7 +24,7 @@ steps:
 
 #1
 - title: Answer your first challenge question
-  description: Determine the differences between open source and innersource.
+  description: Determine the differences between open source and InnerSource.
   link: '{{ repoUrl }}/issues/1'
   event: issues.edited
   actions:
@@ -52,7 +52,7 @@ steps:
 
 #3
 - title: Merge the ownership pull request
-  description: Beef up your innersource toolkit with resources about repository ownership.
+  description: Beef up your InnerSource toolkit with resources about repository ownership.
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.closed
   actions:
@@ -79,7 +79,7 @@ steps:
 
 #5
 - title: Merge the discoverability pull request
-  description: Add resources for making discoverable repositories to your innersource toolkit.
+  description: Add resources for making discoverable repositories to your InnerSource toolkit.
   link: '{{ repoUrl }}/pull/3'
   event: pull_request.closed
   actions:
@@ -106,7 +106,7 @@ steps:
 
 #7
 - title: Merge the templates pull request
-  description: Add starter templates to your innersource toolkit.
+  description: Add starter templates to your InnerSource toolkit.
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
@@ -133,7 +133,7 @@ steps:
 
 #9
 - title: Merge the workflows pull request
-  description: Add branching and workflow strategies to your innersource toolkit.
+  description: Add branching and workflow strategies to your InnerSource toolkit.
   link: '{{ repoUrl }}/pull/5'
   event: pull_request.closed
   actions:
@@ -160,7 +160,7 @@ steps:
 
 #11
 - title: Merge the project management pull request
-  description: Beef up your innersource toolkit with project management tips.
+  description: Beef up your InnerSource toolkit with project management tips.
   link: '{{ repoUrl }}/pull/6'
   event: pull_request.closed
   actions:
@@ -177,7 +177,7 @@ steps:
 
 #12
 - title: Answer the success metrics challenge
-  description: Begin thinking about how to measure the success of your innersource program.
+  description: Begin thinking about how to measure the success of your InnerSource program.
   link: '{{ repoUrl }}/pull/7'
   event: issue_comment.created
   actions:
@@ -187,7 +187,7 @@ steps:
 
 #13
 - title: Merge the metrics pull request
-  description: Add possible metrics to your innersource toolkit.
+  description: Add possible metrics to your InnerSource toolkit.
   link: '{{ repoUrl }}/pull/7'
   event: pull_request.closed
   actions:
@@ -203,7 +203,7 @@ steps:
 
 #14
 - title: Enable GitHub Pages
-  description: Publish your innersource toolkit by turning on GitHub Pages. 
+  description: Publish your InnerSource toolkit by turning on GitHub Pages. 
   link: '{{ repoUrl }}/pull/8'
   event: deployment
   actions:

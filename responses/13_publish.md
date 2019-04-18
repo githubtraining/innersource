@@ -1,6 +1,6 @@
 ### Almost done!
 
-It's time to publish the Innersource toolkit you've been working on.
+It's time to publish the InnerSource toolkit you've been working on.
 
 To publish:
 1. Go to the **Settings** tab for this repository
