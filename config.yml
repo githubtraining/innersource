@@ -47,6 +47,7 @@ steps:
   event: pull_request.edited
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 02_repo-owner-answer.md
 
@@ -74,6 +75,7 @@ steps:
   event: issue_comment.created
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 04_discoverability-answer.md
 
@@ -101,6 +103,7 @@ steps:
   event: pull_request.edited
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 06_templates-answer.md
 
@@ -128,6 +131,7 @@ steps:
   event: pull_request.edited
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 08_workflows-answer.md
 
@@ -155,6 +159,7 @@ steps:
   event: pull_request.edited
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 10_projects-answer.md
 
@@ -182,6 +187,7 @@ steps:
   event: issue_comment.created
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 12_metrics-answer.md
 
