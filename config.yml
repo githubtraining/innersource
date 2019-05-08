@@ -47,6 +47,7 @@ steps:
   event: pull_request.edited
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 02_repo-owner-answer.md
 
@@ -74,6 +75,7 @@ steps:
   event: issue_comment.created
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 04_discoverability-answer.md
 
@@ -101,6 +103,7 @@ steps:
   event: pull_request.edited
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 06_templates-answer.md
 
@@ -128,6 +131,7 @@ steps:
   event: pull_request.edited
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 08_workflows-answer.md
 
@@ -155,6 +159,7 @@ steps:
   event: pull_request.edited
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 10_projects-answer.md
 
@@ -182,6 +187,7 @@ steps:
   event: issue_comment.created
   actions:
   - type: removeBranchProtection
+    required: false
   - type: respond
     with: 12_metrics-answer.md
 
@@ -205,14 +211,20 @@ steps:
 - title: Enable GitHub Pages
   description: Publish your InnerSource toolkit by turning on GitHub Pages. 
   link: '{{ repoUrl }}/pull/8'
-  event: deployment
+  event: page_build
   actions:
   - type: removeBranchProtection
+    required: false
+  - type: octokit
+    method: repos.getPages
+    owner: '%payload.repository.owner.login%'
+    repo: '%payload.repository.name%'
+    action_id: pagesUrl
   - type: respond
     issue: Publish your toolkit
     with: 14_congratulations.md
     data:
-      deploymentURL: 'https://%payload.repository.owner.login%.github.io/%payload.repository.name%'
-      learningPathURL: 'https://github-learning-lab-staging.herokuapp.com/githubtraining/paths/innersource:-theory-to-practice'
+      deploymentURL: '%actions.pagesUrl.data.html_url%'
+      learningPathURL: 'https://lab.github.com/githubtraining/paths/innersource:-theory-to-practice'
       forkURL: '%payload.repository.html_url%/fork'
       downloadURL: '%payload.repository.html_url%/archive/master.zip'
