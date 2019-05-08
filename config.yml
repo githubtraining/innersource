@@ -58,6 +58,7 @@ steps:
   event: pull_request.closed
   actions:
   - type: updateBranchProtection
+    required: false
   - type: createPullRequest
     title: Create discoverable repos
     head: discoverable-repos
@@ -86,6 +87,7 @@ steps:
   event: pull_request.closed
   actions:
   - type: updateBranchProtection
+    required: false
   - type: createPullRequest
     title: Issue and PR templates
     head: templates
@@ -114,6 +116,7 @@ steps:
   event: pull_request.closed
   actions:
   - type: updateBranchProtection
+    required: false
   - type: createPullRequest
     title: Workflows
     head: workflows
@@ -142,6 +145,7 @@ steps:
   event: pull_request.closed
   actions:
   - type: updateBranchProtection
+    required: false
   - type: createPullRequest
     title: Managing projects on GitHub
     head: projects
@@ -170,6 +174,7 @@ steps:
   event: pull_request.closed
   actions:
   - type: updateBranchProtection
+    required: false
   - type: createPullRequest
     title: Measuring success
     head: metrics
@@ -198,6 +203,7 @@ steps:
   event: pull_request.closed
   actions:
   - type: updateBranchProtection
+    required: false
   - type: createIssue
     title: Publish your toolkit
     body: 13_publish.md
