@@ -213,6 +213,6 @@ steps:
     with: 14_congratulations.md
     data:
       deploymentURL: 'https://%payload.repository.owner.login%.github.io/%payload.repository.name%'
-      learningPathURL: 'https://github-learning-lab-staging.herokuapp.com/githubtraining/paths/innersource:-theory-to-practice'
+      learningPathURL: 'https://lab.github.com/githubtraining/paths/innersource:-theory-to-practice'
       forkURL: '%payload.repository.html_url%/fork'
       downloadURL: '%payload.repository.html_url%/archive/master.zip'
