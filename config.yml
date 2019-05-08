@@ -205,9 +205,10 @@ steps:
 - title: Enable GitHub Pages
   description: Publish your InnerSource toolkit by turning on GitHub Pages. 
   link: '{{ repoUrl }}/pull/8'
-  event: deployment
+  event: page_build
   actions:
   - type: removeBranchProtection
+    required: false
   - type: octokit
     method: repos.getPages
     owner: '%payload.repository.owner.login%'
