@@ -208,11 +208,16 @@ steps:
   event: deployment
   actions:
   - type: removeBranchProtection
+  - type: octokit
+    method: repos.getPages
+    owner: '%payload.repository.owner.login%'
+    repo: '%payload.repository.name%'
+    action_id: pagesUrl
   - type: respond
     issue: Publish your toolkit
     with: 14_congratulations.md
     data:
-      deploymentURL: 'https://%payload.repository.owner.login%.github.io/%payload.repository.name%'
+      deploymentURL: '%actions.pagesUrl.data.html_url%'
       learningPathURL: 'https://lab.github.com/githubtraining/paths/innersource:-theory-to-practice'
       forkURL: '%payload.repository.html_url%/fork'
       downloadURL: '%payload.repository.html_url%/archive/master.zip'
