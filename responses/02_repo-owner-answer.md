@@ -9,7 +9,11 @@ A repository _does_ exist at githubtraining/training-manual, but it is private.
 
 ## Understanding repository visibility
 
-The repository `training-manual` in the @githubtraining organization is private. There are three types of repository visiility: public, internal, and private. Our repository, `githubtraining/training-manual`, isn't public. It could be internal, which means only members of the organizations that an account owns will see it, or it could be private, which means only teams and individuals that have been granted access to it can see it. Otherwise, it'll appear like the repository doesn't exist to you. This is an example of why having the right ownership structure is important. Having too many organizations with restrictive permissions silos and isolates each organization's work.
+There are three types of repository visiility: **public, internal, and private**. 
+
+Our repository, `githubtraining/training-manual`, isn't public. It could be internal, which means only members of the organizations that an account owns will see it, or it could be private, which means only teams and individuals that have been granted access to it can see it. 
+
+This is an example of why having the right ownership structure is important. Otherwise, it can be difficult for members of your team to find and contribute to projects. Having too many disconnected organizations with restrictive permissions silos and isolates each organization's work.
 
 Here are some recommendations based on some :sparkles: use of GitHub that we've seen:
 - Use the internal visibility (currently in beta) if you're working on behalf of an account with multiple organizations
