@@ -16,7 +16,7 @@ Our repository, `githubtraining/training-manual`, isn't public. It could be inte
 This is an example of why having the right ownership structure is important. Otherwise, it can be difficult for members of your team to find and contribute to projects. Having too many disconnected organizations with restrictive permissions silos and isolates each organization's work.
 
 Here are some recommendations based on some :sparkles: use of GitHub that we've seen:
-- Use the internal visibility (currently in beta) if you're working on behalf of an account with multiple organizations
+- Use the internal visibility (currently in beta) if you're working on behalf of an [enterprise account](https://help.github.com/en/articles/about-enterprise-accounts).
 - Name your repositories in a meaningful manner. Usually a simple project or application name will suffice.
 <hr>
 </details>
