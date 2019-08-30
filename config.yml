@@ -219,8 +219,6 @@ steps:
   link: '{{ repoUrl }}/pull/8'
   event: page_build
   actions:
-  - type: removeBranchProtection
-    required: false
   - type: octokit
     method: repos.getPages
     owner: '%payload.repository.owner.login%'
