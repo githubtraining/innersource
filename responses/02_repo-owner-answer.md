@@ -26,7 +26,7 @@ Here are some recommendations based on some :sparkles: admirable :sparkles: use 
 ### :keyboard: Activity: Review this pull request
 
 1. Read the additions in the `Files changed` tab
-2. Approve this pull request
+2. Approve this pull request (if needed)
 3. Merge this pull request
 4. Delete the branch
 

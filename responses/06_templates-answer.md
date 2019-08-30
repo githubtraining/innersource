@@ -7,7 +7,7 @@ But, how could you know? With issue and pull request templates, you can take the
 ### :keyboard: Activity: Review templates
 
 1. Review the examples and types of template files in the `Files changed` tab
-2. Approve this pull request
+2. Approve this pull request (if needed)
 3. Merge this pull request
 4. Delete the branch
 

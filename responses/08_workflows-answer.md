@@ -11,7 +11,7 @@ This pull request covers the basics, but here are some recommendations to help a
 ### :keyboard: Activity: Review workflow documentation
 
 1. Review the changes in the `Files changed` tab
-2. Approve this pull request
+2. Approve this pull request (if needed)
 3. Merge this pull request
 4. Delete the branch
 

@@ -7,7 +7,7 @@ Being explicit about your project management tool will help potential contributo
 ### :keyboard: Activity: Review project management strategies
 
 1. Review the changes in the `Files changed` tab
-2. Approve this pull request
+2. Approve this pull request (if needed)
 3. Merge this pull request
 4. Delete the branch
 

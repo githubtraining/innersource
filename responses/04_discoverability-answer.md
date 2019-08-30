@@ -15,8 +15,9 @@ Discover more about how to make a repository discoverable by visiting the **File
 ### :keyboard: Activity: Discoverability
 
 1. Review the additions about discoverability in the `Files changed` tab
-1. Merge this pull request
-1. Delete the branch
+2. Approve this pull request (if needed)
+3. Merge this pull request
+4. Delete the branch
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>

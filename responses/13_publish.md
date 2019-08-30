@@ -3,6 +3,7 @@
 It's time to publish the InnerSource toolkit you've been working on.
 
 To publish:
+
 1. Go to the **Settings** tab for this repository
 1. Scroll down to the section titled _GitHub Pages_
 1. Select **master branch** in the Source drop down
