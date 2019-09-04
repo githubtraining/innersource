@@ -8,7 +8,12 @@ This pull request covers the basics, but here are some recommendations to help a
 - If you haven't picked a workflow, use a common and well documented one.
 - Be explicit about your deployment and release strategy.
 
-Please merge this pull request.
+### :keyboard: Activity: Review workflow documentation
+
+1. Review the changes in the `Files changed` tab
+2. Approve this pull request (if needed)
+3. Merge this pull request
+4. Delete the branch
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>

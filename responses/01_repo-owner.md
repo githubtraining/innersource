@@ -1,4 +1,4 @@
-This pull request is all about repository ownership and naming conventions. 
+This pull request is about repository ownership and naming conventions.
 
 ### Challenge question
 
