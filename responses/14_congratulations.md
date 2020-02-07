@@ -14,4 +14,4 @@ You finished this course. You can see a deployed version of our work together at
 
 I won't track any further events in this repository.
 
-Your next steps are in the [Innersource learning path]({{ learningPathURL }}).
+Your next steps are in the [Innersource learning path]({{ GHE_HOST }}/{{ owner }}/paths/innersource:-theory-to-practice).
