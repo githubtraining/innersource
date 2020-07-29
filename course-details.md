@@ -3,14 +3,15 @@ Organizations of all sizes and in all industries are chatting about InnerSource 
 ## What you'll learn
 
 After completing this course, you'll be able to:
-- contrast user versus organization owned projects
-- make recommendations about the number of GitHub organizations you should have
-- create discoverable repositories
-- create robust repository READMEs
-- use issue and pull request templates
-- build transparency into repositories
-- measure the success of InnerSource within your organization
-- distribute your InnerSource toolkit
+
+- Contrast user versus organization owned projects
+- Create discoverable repositories
+- Create robust repository READMEs
+- Use issue and pull request templates
+- Make sensible configuration decisions for repositories, like using protected branches and CODEOWNERS
+- Build transparency into repositories through well documented branching strategies, project management techniques, and workflow best practices
+- Prioritize what matters when measuring InnerSource and collaboration
+- Distribute your InnerSource toolkit
 
 You'll be able to answer questions like:
 
