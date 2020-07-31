@@ -10,7 +10,7 @@ before:
   body: 00_welcome.md
 - type: updateBranchProtection
 
-# Course artifacts
+# Course artifacts:
 # 1. Issue: Welcome
 # 2. PR: Repository ownership and names
 # 3. PR: Create discoverable repos
