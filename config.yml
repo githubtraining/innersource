@@ -231,6 +231,5 @@ steps:
     with: 14_congratulations.md
     data:
       deploymentURL: '%actions.pagesUrl.data.html_url%'
-      learningPathURL: 'https://lab.github.com/githubtraining/paths/innersource:-theory-to-practice'
       forkURL: '%payload.repository.html_url%/fork'
       downloadURL: '%payload.repository.html_url%/archive/master.zip'
