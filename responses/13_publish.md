@@ -6,7 +6,7 @@ To publish:
 
 1. Go to the **Settings** tab for this repository
 1. Scroll down to the section titled _GitHub Pages_
-1. Select **master branch** in the Source drop down
+1. Select **main branch** in the Source drop down
 
 That's all! GitHub Pages will then deploy your site and report its status back to me.
 
