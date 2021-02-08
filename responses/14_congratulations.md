@@ -14,4 +14,4 @@ You finished this course. You can see a deployed version of our work together at
 
 I won't track any further events in this repository.
 
-Your next steps are in the [Innersource learning path]({{ GITHUB_URL }}/{{ course.Owner.login }}/paths/innersource:-theory-to-practice).
+Your next steps are in the [Innersource learning path]({{ GITHUB_URL }}/{{ course.Owner.login }}/innersource:-theory-to-practice).
